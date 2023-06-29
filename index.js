@@ -7,18 +7,18 @@ const transporter = nodemailer.createTransport({
       pass: 'uppjyfwwmwvciphz',
     },
   });
-  const mailOptions = {
+  const maildetails = {
     from: 'ashikmohan3992@gmail.com',
     to: 'ashikmohan2000@gmail.com',
     subject: 'Hello from Nodemailer',
     text: 'This is a test email sent using Nodemailer for an assignment purpose.',
   };
 
-  transporter.sendMail(mailOptions, (err) => {
+  transporter.sendMail(maildetails, (err) => {
     if (err) {
       console.error(err);
     } else {
-      console.log('Email sent ');
+      console.log('Email has been successfully sent.');
     }
   });
   
